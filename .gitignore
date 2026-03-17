@@ -7,3 +7,5 @@ __pycache__/
 *.png
 .ipynb_checkpoints/
 .vscode/
+
+!images/*.png

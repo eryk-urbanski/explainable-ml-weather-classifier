@@ -21,3 +21,28 @@ You can download the *Rain in Australia* dataset from Kaggle (accessed in March 
 https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
 
 After downloading, place the file **`weatherAUS.csv`** inside the `data/` directory.
+
+## Project Results
+
+### Random Forest classifier results
+
+![rf - conf matrix](images/rf_conf_matrix.png)
+
+### Feature Importance
+
+From model:
+![rf - gini importance](images/feature_gini_importance.png)
+
+SHAP-value-based importance calculated from 5 samples:
+![rf - shap importance](images/shap_feature_importance.png)
+
+Humidity3pm, Pressure3pm and Sunshine seem to be the three most important features.
+
+### LIME
+
+True negative:
+![lime - tn](images/lime_ex0.png)
+
+False negative:
+![lime - fn](images/lime_ex1.png)
+The Pressure3pm feature of high importance tried to 'persuade' the model towards positive, but lost the fight against equally important features Humidity3pm and Sunshine.
