@@ -2,4 +2,8 @@ data/
 *.csv
 *.zip
 venv/
+no-shap-venv/
 __pycache__/
+*.png
+.ipynb_checkpoints/
+.vscode/
